@@ -3,14 +3,14 @@
 - Name:詹濬誌
 - Student ID:111370136
 ## Project Repository
-
+https://github.com/111370136/Final_Project.git
 ## Presentation Video
-
+https://youtu.be/43KnNPmp2II
 ## Dataset
 - Raw data: `YRBS_2007.csv`
 - Processed data used across notebooks: `cleaned_school_safety.csv`
-## Selected Project Question & Extension
-- Adolescents' Age and Feelings of Sadness and Despair as Predictors of School Safety Risks
+## Selected Project Question
+- Do students of different grades who feel sad have the same average campus safety score, and what are their demographic characteristics?
 ## Variables:
 - Grade, Sad_Hopeless, Weapon_School, Fight_Total, Fight_School, Injected_Drug, Drug_School
 ### 1. Demographic & Grouping Variable
