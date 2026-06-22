@@ -28,5 +28,6 @@
 ## Key Methodology & Analytical Pipeline
 - First, preprocess the data and create a school safety index based on variables like `Weapon_School`, `Fight_Total`, `Fight_School`, `Injected_Drug`, and `Drug_School`. Then, run an ANOVA with `Grade` and `Sad_Hopeless`. After that, identify the common features of the group that has a high school safety risk index.
 ## Final conclusion
-
+- Compared to older grades, there are more high-risk students in the lower grades, and psychologically, half of the students are   - in the sadness group.
+- So, besides controlling weapons and drugs, counseling interventions are also needed to achieve the best results.
 
