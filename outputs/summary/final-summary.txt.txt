@@ -1,0 +1,22 @@
+1. Objective & Dataset
+- This study analyzes the YRBS dataset to examine how school safety risks relate to grade level and mental health (feelings of sadness/hopelessness). 
+- The analysis utilizes a large, representative sample of 13,360 students, with a balanced distribution of approximately 2,300 students per grade.
+
+2. Methodology
+- Risk Scoring: A weighted School Safety Score (0–100) was built by integrating frequency indicators of carrying weapons, physical fighting,
+intravenous drug use, and campus drug dealing to isolate a top-tier High-Risk subgroup.
+- Statistical Testing: A Two-Way ANOVA analyzed the main and interaction effects of grade and mental health on safety scores. 
+Tukey's HSD post-hoc test was used for pairwise grade comparisons.
+- Data Integrity: Codebook inversion biases were corrected for binary and frequency variables 
+to ensure prevalence rates precisely match original survey definitions.
+
+3. Key Findings
+- Mental Health Impact: The Two-Way ANOVA shows mental health (Sad_Hopeless) has a highly significant main effect (p = 0.0000).
+Students experiencing persistent sadness exhibit a mean risk score of 15.66, nearly double the score of 8.73 for those who do not.
+- Grade-Level Risk: Grade level exerts a significant main effect (p = 0.0034). 
+Tukey's HSD confirms that 9th-graders (11.37) and 10th-graders (11.33) face significantly higher safety risks than 12th-grade seniors (9.93). 
+The interaction effect was not significant (p = 0.4616).
+
+4. Conclusion
+- Compared to older grades, there are more high-risk students in the lower grades, and psychologically, half of the students are in the sadness group.
+So, besides controlling weapons and drugs, counseling interventions are also needed to achieve the best results.

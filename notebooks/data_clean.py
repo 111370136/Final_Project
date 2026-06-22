@@ -57,9 +57,9 @@ try:
     print("【步驟四：自訂分數映射與校園安全風險指數計算】")
     df_clean['Sad_Hopeless'] = df_clean['Sad_Hopeless'].map({1: 1, 2: 0})
     # --- 定義你給予的自訂分數映射表 (選項: 分數) ---
-    weapon_map = {1: 10, 2: 25, 3: 45, 4: 70, 5: 100}
-    fight_map = {1: 5, 2: 10, 3: 20, 4: 30, 5: 45, 6: 60, 7: 80, 8: 100}
-    injected_map = {1: 20, 2: 50, 3: 100}
+    weapon_map = {1: 0, 2: 50, 3: 70, 4: 90, 5: 100}
+    fight_map = {1: 0, 2: 20, 3: 30, 4: 50, 5: 70, 6: 80, 7: 90, 8: 100}
+    injected_map = {1: 0, 2: 50, 3: 100}
     drug_school_map = {1: 100, 2: 0} # 1=Yes(100分), 2=No(0分)
 
     # 將原始選項轉換為 0~100 的基礎得分
@@ -80,17 +80,17 @@ try:
     
     # 攜帶武器另外額外懲罰分數：只要不是選項 1 (有攜帶武器天數 > 0)，直接額外外加 30 分
     penalty_score = df_clean['Weapon_School'].apply(lambda x: 30 if x > 1 else 0)
-    
     # 最終加總總分
     df_clean['Safety_Score'] = base_score + penalty_score
+    
 
     print("=" * 60)
     print("【步驟五：風險等級分級 (Risk Grouping)】")
-    # 0–20：低風險 | 21–50：中風險 | 51–100 以上：高風險
+    # 0–30：低風險 | 31–60：中風險 | 61–100 以上：高風險
     def assign_risk_label(score):
-        if score <= 20:
+        if score <= 30:
             return 'Low'
-        elif score <= 50:
+        elif score <= 60:
             return 'Medium'
         else:
             return 'High'
